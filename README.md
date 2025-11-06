@@ -5,10 +5,11 @@
 ![Windows 11](https://img.shields.io/badge/Windows%2011-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![NuGet](https://img.shields.io/nuget/v/Win11Effects.Fluent?style=for-the-badge&logo=nuget)
 
 **Transform your legacy WinForms apps into modern Windows 11 masterpieces! ✨**
 
-<img src="https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/assets/WindowAppsRegular.svg" width="120" alt="Windows 11 Icon" />
+<img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Window/SVG/ic_fluent_window_24_regular.svg" width="120" alt="Windows 11 Icon">
 
 </div>
 
@@ -19,7 +20,7 @@
 ### ⚡ 1-Minute Setup
 
 ```csharp
-using Windows11Effects;
+using Win11Effects.Fluent;
 
 public partial class MainForm : Form
 {
@@ -38,7 +39,6 @@ public partial class MainForm : Form
         }
     }
 }
-
 ```
 
 ### 🎯 One-Liner Magic
@@ -48,20 +48,9 @@ new Windows11Effects(this).ApplyFullWindows11Theme();
 ```
 
 ## 📦 Installation
-<div align="center"> <h3>🎯 Choose Your Installation Method</h3> <img src="https://via.placeholder.com/700x200/2D2D30/FFFFFF?text=3+Easy+Ways+to+Get+Started" width="80%" alt="Installation Methods"> </div>
+<img src="https://placehold.co/700x200/2D2D30/FFFFFF/png?text=3+Easy+Ways+to+Get+Started" width="80%" alt="Installation Methods">
 
-> 🔧 Method 1: Manual Installation
-```csharp
-# 1. Create a new file in your project
-Windows11Effects.cs
-
-# 2. Copy the Windows11Effects class code
-
-# 3. Add using statement
-using Windows11Effects;
-```
-> 📦 Method 2: NuGet Package
-
+> 🔧 Method 1: NuGet Package (Recommended)
 ```csharp
 # Package Manager Console
 Install-Package Win11Effects.Fluent
@@ -71,16 +60,27 @@ dotnet add package Win11Effects.Fluent
 
 # PackageReference
 <PackageReference Include="Win11Effects.Fluent" Version="1.0.0" />
+```
+> 📋 Method 2: Manual Installation
+
+```csharp
+# 1. Create a new file in your project
+Windows11Effects.cs
+
+# 2. Copy the Windows11Effects class code from GitHub
+
+# 3. Add using statement
+using Win11Effects.Fluent;
 
 ```
 > 🐙 Method 3: Clone Repository
 ```csharp
-git clone https://github.com/yourrepo/winforms-win11-effects.git
+git clone https://github.com/AliYalcin0/Windows-11-Visual-Effects-for-WinForms.git
 cp Windows11Effects.cs YourProject/
 ```
 
 ### 💫 Features
-<div align="center"> <h3>🎨 Visual Effects Showcase</h3> <img src="https://via.placeholder.com/800x400/1E1E1E/FFFFFF?text=Stunning+Visual+Effects+Gallery" width="90%" alt="Features Showcase"> </div>
+<img src="https://placehold.co/800x400/1E1E1E/FFFFFF/png?text=Stunning+Visual+Effects+Gallery" width="90%" alt="Features Showcase">
 
 ### 🎨 Visual Effects
 
@@ -101,10 +101,9 @@ cp Windows11Effects.cs YourProject/
 | **Easy of Use** | ⭐⭐⭐⭐⭐ | Simple API, just one line of code |
 
 ### 🛠️ Usage Examples
-<div align="center"> <h3>💻 Real-World Implementation</h3> <img src="https://via.placeholder.com/700x200/0078D4/FFFFFF?text=Practical+Code+Examples+for+Every+Scenario" width="80%" alt="Usage Examples"> </div>
+<img src="https://placehold.co/700x200/0078D4/FFFFFF/png?text=Practical+Code+Examples+for+Every+Scenario" width="80%" alt="Usage Examples">
 
 ```csharp
-// 🏁 Basic Implementation - Login Form Example
 public class LoginForm : Form
 {
     public LoginForm()
@@ -129,7 +128,6 @@ public class LoginForm : Form
 }
 ```
 ```csharp
-// 🚀 Advanced Implementation - Dashboard Example
 public class DashboardForm : Form
 {
     private Windows11Effects effects;
@@ -163,9 +161,10 @@ public class DashboardForm : Form
         isDarkMode = !isDarkMode;
         effects.SetDarkMode(isDarkMode);
     }
+}
 ```
 ```csharp
-// 🎮 Real-Time Control - Dynamic Effect Switching
+// Dynamic effect switching
 private void comboBoxEffects_SelectedIndexChanged(object sender, EventArgs e)
 {
     switch (comboBoxEffects.SelectedIndex)
@@ -185,19 +184,17 @@ private void comboBoxEffects_SelectedIndexChanged(object sender, EventArgs e)
     }
 }
 
-// 🌙 Theme toggling with visual feedback
+// Theme toggling with visual feedback
 private void themeButton_Click(object sender, EventArgs e)
 {
     bool newDarkMode = !effects.IsDarkModeEnabled();
     effects.SetDarkMode(newDarkMode);
     themeButton.Text = newDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
 }
-}
-
 ```
 
 ### 📚 API Reference
-<div align="center"> <h3>🔧 Complete API Documentation</h3> <img src="https://via.placeholder.com/700x200/2D2D30/FFFFFF?text=Comprehensive+API+Reference+Guide" width="80%" alt="API Reference"> </div>
+<img src="https://placehold.co/700x200/2D2D30/FFFFFF/png?text=Comprehensive+API+Reference+Guide" width="80%" alt="API Reference">
 
 
 ```csharp
@@ -216,7 +213,7 @@ Windows11Effects effects = new Windows11Effects(targetForm);
 | `DisableEffects()` | `None` | `void` | ⚫ Removes all visual effects |
 
 ### 🎨 Customization Guide
-<div align="center"> <h3>🌈 Make It Your Own!</h3> <img src="https://via.placeholder.com/700x200/0078D4/FFFFFF?text=Custom+Themes+%26+Color+Schemes" width="80%" alt="Customization"> </div>
+<img src="https://placehold.co/700x200/0078D4/FFFFFF/png?text=Custom+Themes+%26+Color+Schemes" width="80%" alt="Customization">
 
 ```csharp
 // 🌈 Color Schemes
@@ -227,18 +224,20 @@ this.ForeColor = Color.White;                   // Crisp white text
 button.BackColor = Color.FromArgb(0, 120, 215); // Modern blue accents
 ```
 ```csharp
-// ☀️ Light Theme
-this.BackColor = Color.White;                   // Clean white background
-this.ForeColor = Color.Black;                   // Professional black text
-button.BackColor = Color.FromArgb(0, 102, 204); // Classic blue buttons
+// 🌙 Dark Theme (Recommended)
+this.BackColor = Color.FromArgb(32, 32, 32);    // Deep dark background
+this.ForeColor = Color.White;                   // Crisp white text
+button.BackColor = Color.FromArgb(0, 120, 215); // Modern blue accents
 ```
 ```csharp
 // 🎨 Custom Theme
 this.BackColor = Color.FromArgb(43, 43, 43);    // Custom dark gray
 this.ForeColor = Color.FromArgb(220, 220, 220); // Soft white text
 ```
+
+### ⚙️ Recommended Form Settings
+
 ```csharp
-// ⚙️ Recommended Form Settings
 // 🎯 For the best Windows 11 experience
 this.FormBorderStyle = FormBorderStyle.Sizable;  // Required for effects
 this.DoubleBuffered = true;                      // Smooth rendering
@@ -248,11 +247,9 @@ this.Font = new Font("Segoe UI", 9);             // Modern Windows font
 ```
 
 ### ⚡ Performance Tips
-<div align="center"> <h3>🚀 Optimize Your App</h3> <img src="https://via.placeholder.com/700x200/107C10/FFFFFF?text=Best+Practices+for+Optimal+Performance" width="80%" alt="Performance Tips"> </div>
+<img src="https://placehold.co/700x200/107C10/FFFFFF/png?text=Best+Practices+for+Optimal+Performance" width="80%" alt="Performance Tips">
 
 ```csharp
-// ✅ Best Practices
-
 // ✅ Always enable double buffering for smoothness
 this.DoubleBuffered = true;
 
@@ -270,8 +267,6 @@ this.FormBorderStyle = FormBorderStyle.Sizable;
 ```
 
 ```csharp
-// ❌ Common Mistakes
-
 // ❌ Never apply effects without checking OS first
 effects.EnableMicaEffect(); // ❌ Crashes on Windows 10!
 
@@ -286,7 +281,7 @@ this.FormBorderStyle = FormBorderStyle.FixedDialog; // ❌ No effects!
 ```
 
 ### 🐛 Troubleshooting
-<div align="center"> <h3>🔧 Fix Common Issues</h3> <img src="https://via.placeholder.com/700x200/D83B01/FFFFFF?text=Quick+Solutions+for+Common+Problems" width="80%" alt="Troubleshooting"> </div>
+<img src="https://placehold.co/700x200/D83B01/FFFFFF/png?text=Quick+Solutions+for+Common+Problems" width="80%" alt="Troubleshooting">
 
 ### 🔧 Common Issues & Solutions
 
@@ -298,7 +293,6 @@ this.FormBorderStyle = FormBorderStyle.FixedDialog; // ❌ No effects!
 | **Effects look wrong** | Set proper border style | `FormBorderStyle.Sizable` |
 
 ```csharp
-// 🐞 Debug Mode
 public void EnableEffectsWithLogging()
 {
     try
@@ -327,8 +321,7 @@ public void EnableEffectsWithLogging()
 ⭐ Love This Project?
 If this library made your WinForms app look amazing, give it a star! ⭐
 
-<img src="https://via.placeholder.com/400x100/FFB900/000000?text=⭐+Star+This+Repository+⭐" width="50%" alt="Star Repository">
+<img src="https://placehold.co/400x100/FFB900/000000/png?text=⭐+Star+This+Repository+⭐" width="50%" alt="Star Repository">
 Made with ❤️ for the WinForms community
-<img src="https://via.placeholder.com/300x80/0078D4/FFFFFF?text=Happy+Coding+!+🎉" width="40%" alt="Happy Coding"></div> ```
-İşte tüm README.md içeriği kod blokları şeklinde! Her bölüm ayrı ayrı kod blokları içinde ve direkt kopyala-yapıştır yapabilirsin. 🚀
+<img src="https://placehold.co/300x80/0078D4/FFFFFF/png?text=Happy+Coding+!+🎉" width="40%" alt="Happy Coding"> ```
 
