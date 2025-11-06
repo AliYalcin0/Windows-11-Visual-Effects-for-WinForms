@@ -322,5 +322,5 @@ If this library made your WinForms app look amazing, give it a star! ⭐
 
 <img src="https://img.shields.io/badge/⭐-Star_This_Repository-24292e?style=for-the-badge&logo=github" alt="Star Repository">
 Made with ❤️ for the WinForms community
-<img src="https://img.shields.io/badge/Happy_Coding_!-🎉-2d7d9a?style=for-the-badge" alt="Happy Coding"> ```
+<img src="https://img.shields.io/badge/Happy_Coding_!-🎉-2d7d9a?style=for-the-badge" alt="Happy Coding"> 
 
