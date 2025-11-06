@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using Windows11Effects.Examples;
 
 namespace Windows11Effects.Demo
 {
@@ -12,7 +13,7 @@ namespace Windows11Effects.Demo
             Application.SetCompatibleTextRenderingDefault(false);
             
             // Check Windows version and show appropriate demo
-            if (Windows11Effects.IsWindows11OrGreater())
+            if (Win11Effects.Fluent.Windows11Effects.IsWindows11OrGreater())
             {
                 Application.Run(new AdvancedExampleForm());
             }
@@ -22,4 +23,4 @@ namespace Windows11Effects.Demo
             }
         }
     }
-)
+}
