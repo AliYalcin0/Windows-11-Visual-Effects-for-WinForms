@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Windows11Effects
+namespace Win11Effects.Fluent
 {
     /// <summary>
     /// Provides Windows 11 visual effects for Windows Forms applications
