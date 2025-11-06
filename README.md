@@ -38,14 +38,20 @@ public partial class MainForm : Form
         }
     }
 }
-csharp
-Kodu kopyala
-// 🎯 One-Liner Magic
+
+```
+
+### 🎯 One-Liner Magic
+
+```csharp
 new Windows11Effects(this).ApplyFullWindows11Theme();
-📦 Installation
-🔧 Method 1: Manual Installation
-bash
-Kodu kopyala
+```
+
+## 📦 Installation
+<div align="center"> <h3>🎯 Choose Your Installation Method</h3> <img src="https://via.placeholder.com/700x200/2D2D30/FFFFFF?text=3+Easy+Ways+to+Get+Started" width="80%" alt="Installation Methods"> </div>
+
+>> 🔧 Method 1: Manual Installation
+```csharp
 # 1. Create a new file in your project
 Windows11Effects.cs
 
@@ -53,9 +59,10 @@ Windows11Effects.cs
 
 # 3. Add using statement
 using Windows11Effects;
-📦 Method 2: NuGet Package
-bash
-Kodu kopyala
+```
+>> 📦 Method 2: NuGet Package
+
+```csharp
 # Package Manager Console
 Install-Package Win11Effects.Fluent
 
@@ -64,178 +71,234 @@ dotnet add package Win11Effects.Fluent
 
 # PackageReference
 <PackageReference Include="Win11Effects.Fluent" Version="1.0.0" />
-🐙 Method 3: Clone Repository
-bash
-Kodu kopyala
+
+```
+>> 🐙 Method 3: Clone Repository
+```csharp
 git clone https://github.com/yourrepo/winforms-win11-effects.git
 cp Windows11Effects.cs YourProject/
-💫 Features
-🎨 Visual Effects
-Feature	Icon	Windows 11	Windows 10	Description
-Mica Effect	🎨	✅ Full	❌ No Support	Windows 11 signature material design
-Acrylic Effect	🔮	✅ Full	⚠️ Limited	Semi-transparent blur background
-Dark Mode	🌙	✅ Full	✅ Full	System-level dark theme integration
-Auto Detection	🔍	✅	✅	Smart OS version checking
+```
 
-⚡ Performance & Compatibility
-Aspect	Rating	Details
-Performance	⭐⭐⭐⭐⭐	Hardware accelerated
-Memory Usage	⭐⭐⭐⭐	Lightweight implementation
-Compatibility	⭐⭐⭐⭐	Windows 10/11 support
-Ease of Use	⭐⭐⭐⭐⭐	Simple API
+### 💫 Features
+<div align="center"> <h3>🎨 Visual Effects Showcase</h3> <img src="https://via.placeholder.com/800x400/1E1E1E/FFFFFF?text=Stunning+Visual+Effects+Gallery" width="90%" alt="Features Showcase"> </div>
 
-🛠️ Usage Examples
-🏁 Basic Implementation
-csharp
-Kodu kopyala
+### 🎨 Visual Effects
+
+| Feature | Icon | Windows 11 | Windows 10 | Description |
+|---------|------|------------|------------|-------------|
+| **Mica Effect** | 🎨 | ✅ Full Support | ❌ No Support | Windows 11's signature material design with dynamic texture |
+| **Acrylic Effect** | 🔮 | ✅ Full Support | ⚠️ Limited | Beautiful semi-transparent blur background effects |
+| **Dark Mode** | 🌙 | ✅ Full Support | ✅ Full Support | Seamless system-level dark theme integration |
+| **Auto Detection** | 🔍 | ✅ Smart | ✅ Smart | Intelligent OS version checking and fallbacks |
+
+### ⚡ Performance & Compatibility
+
+| Aspect | Rating | Details |
+|--------|--------|---------|
+| **Performance** | ⭐⭐⭐⭐⭐ | Hardware accelerated, minimal CPU usage |
+| **Memory Usage** | ⭐⭐⭐⭐ | Lightweight, efficient implementation |
+| **Compatibility** | ⭐⭐⭐⭐ | Windows 10/11 with smart fallbacks |
+| **Easy of Use** | ⭐⭐⭐⭐⭐ | Simple API, just one line of code |
+
+### 🛠️ Usage Examples
+<div align="center"> <h3>💻 Real-World Implementation</h3> <img src="https://via.placeholder.com/700x200/0078D4/FFFFFF?text=Practical+Code+Examples+for+Every+Scenario" width="80%" alt="Usage Examples"> </div>
+
+```csharp
+// 🏁 Basic Implementation - Login Form Example
 public class LoginForm : Form
 {
     public LoginForm()
     {
         InitializeComponent();
-
-        // Initialize effects
+        
+        // 🎨 Initialize Windows 11 effects
         var effects = new Windows11Effects(this);
-
-        // Apply if Windows 11
+        
+        // 🔍 Apply only if Windows 11
         if (Windows11Effects.IsWindows11OrGreater())
         {
             effects.EnableMicaEffect();
             effects.SetDarkMode(true);
         }
-
-        // Modern styling
+        
+        // 🎯 Modern styling for all Windows versions
         this.BackColor = Color.FromArgb(32, 32, 32);
         this.ForeColor = Color.White;
+        this.Font = new Font("Segoe UI", 9);
     }
 }
-🚀 Advanced Implementation
-csharp
-Kodu kopyala
+```
+```csharp
+// 🚀 Advanced Implementation - Dashboard Example
 public class DashboardForm : Form
 {
     private Windows11Effects effects;
     private bool isDarkMode = true;
-
+    
     public DashboardForm()
     {
-        // Apply all effects
+        // ✨ Apply ALL Windows 11 effects automatically
         effects = new Windows11Effects(this);
         effects.ApplyFullWindows11Theme();
-
+        
+        // 🎨 Setup modern interface
         SetupModernInterface();
     }
-
+    
     private void SetupModernInterface()
     {
-        // Modern color scheme
+        // 🌙 Modern dark color scheme
         this.BackColor = Color.FromArgb(28, 28, 30);
         this.ForeColor = Color.White;
-
-        // Modern controls
+        
+        // 🎯 Create modern UI components
         CreateNavigation();
         CreateContent();
+        CreateStatusBar();
     }
-
-    // Toggle effects at runtime
+    
+    // 🔄 Toggle effects at runtime
     private void ToggleDarkMode()
     {
         isDarkMode = !isDarkMode;
         effects.SetDarkMode(isDarkMode);
     }
-}
-🎮 Real-Time Control
-csharp
-Kodu kopyala
-// Dynamic effect switching
-private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+```
+```csharp
+// 🎮 Real-Time Control - Dynamic Effect Switching
+private void comboBoxEffects_SelectedIndexChanged(object sender, EventArgs e)
 {
-    switch (comboBox1.SelectedIndex)
+    switch (comboBoxEffects.SelectedIndex)
     {
-        case 0: effects.EnableMicaEffect(); break;
-        case 1: effects.EnableAcrylicEffect(); break;
-        case 2: effects.DisableEffects(); break;
+        case 0: 
+            effects.EnableMicaEffect(); 
+            statusLabel.Text = "🎨 Mica Effect Enabled";
+            break;
+        case 1: 
+            effects.EnableAcrylicEffect(); 
+            statusLabel.Text = "🔮 Acrylic Effect Enabled";
+            break;
+        case 2: 
+            effects.DisableEffects(); 
+            statusLabel.Text = "⚫ Effects Disabled";
+            break;
     }
 }
 
-// Theme toggling
+// 🌙 Theme toggling with visual feedback
 private void themeButton_Click(object sender, EventArgs e)
 {
-    effects.SetDarkMode(!effects.IsDarkModeEnabled());
+    bool newDarkMode = !effects.IsDarkModeEnabled();
+    effects.SetDarkMode(newDarkMode);
+    themeButton.Text = newDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
 }
-📚 API Reference
-🏗️ Constructor
-csharp
-Kodu kopyala
+}
+
+```
+
+### 📚 API Reference
+<div align="center"> <h3>🔧 Complete API Documentation</h3> <img src="https://via.placeholder.com/700x200/2D2D30/FFFFFF?text=Comprehensive+API+Reference+Guide" width="80%" alt="API Reference"> </div>
+
+
+```csharp
+// 🏗️ Constructor
+// 📝 Creates a new Windows 11 effects controller
 Windows11Effects effects = new Windows11Effects(targetForm);
-⚡ Core Methods
-Method	Parameters	Returns	Description
-EnableMicaEffect()	None	void	Applies Mica material effect
-EnableAcrylicEffect()	None	void	Applies Acrylic blur effect
-SetDarkMode(bool enable)	enable	void	Toggles dark mode
-DisableEffects()	None	void	Removes all effects
+```
 
-🎯 Utility Methods
-Method	Parameters	Returns	Description
-IsWindows11OrGreater()	None	bool	Checks OS compatibility
-ApplyFullWindows11Theme()	None	void	Applies all effects
+### ⚡ Core Methods
 
-🎨 Customization Guide
-🌈 Color Schemes
-csharp
-Kodu kopyala
-// Dark Theme
-this.BackColor = Color.FromArgb(32, 32, 32);
-this.ForeColor = Color.White;
-button.BackColor = Color.FromArgb(0, 120, 215);
+| Method | Parameters | Returns | Description |
+|--------|------------|---------|-------------|
+| `EnableMicaEffect()` | `None` | `void` | 🎨 Applies beautiful Mica material effect |
+| `EnableAcrylicEffect()` | `None` | `void` | 🔮 Applies semi-transparent Acrylic blur |
+| `SetDarkMode(bool)` | `enable` | `void` | 🌙 Toggles dark/light mode seamlessly |
+| `DisableEffects()` | `None` | `void` | ⚫ Removes all visual effects |
 
-// Light Theme
-this.BackColor = Color.White;
-this.ForeColor = Color.Black;
-button.BackColor = Color.FromArgb(0, 102, 204);
-⚙️ Recommended Form Settings
-csharp
-Kodu kopyala
-// For best results
-this.FormBorderStyle = FormBorderStyle.Sizable;
+### 🎨 Customization Guide
+<div align="center"> <h3>🌈 Make It Your Own!</h3> <img src="https://via.placeholder.com/700x200/0078D4/FFFFFF?text=Custom+Themes+%26+Color+Schemes" width="80%" alt="Customization"> </div>
+
+```csharp
+// 🌈 Color Schemes
+
+// 🌙 Dark Theme (Recommended)
+this.BackColor = Color.FromArgb(32, 32, 32);    // Deep dark background
+this.ForeColor = Color.White;                   // Crisp white text
+button.BackColor = Color.FromArgb(0, 120, 215); // Modern blue accents
+```
+```csharp
+// ☀️ Light Theme
+this.BackColor = Color.White;                   // Clean white background
+this.ForeColor = Color.Black;                   // Professional black text
+button.BackColor = Color.FromArgb(0, 102, 204); // Classic blue buttons
+```
+```csharp
+// 🎨 Custom Theme
+this.BackColor = Color.FromArgb(43, 43, 43);    // Custom dark gray
+this.ForeColor = Color.FromArgb(220, 220, 220); // Soft white text
+```
+```csharp
+// ⚙️ Recommended Form Settings
+// 🎯 For the best Windows 11 experience
+this.FormBorderStyle = FormBorderStyle.Sizable;  // Required for effects
+this.DoubleBuffered = true;                      // Smooth rendering
+this.MinimumSize = new Size(800, 600);           // Responsive design
+this.StartPosition = FormStartPosition.CenterScreen; // Professional placement
+this.Font = new Font("Segoe UI", 9);             // Modern Windows font
+```
+
+### ⚡ Performance Tips
+<div align="center"> <h3>🚀 Optimize Your App</h3> <img src="https://via.placeholder.com/700x200/107C10/FFFFFF?text=Best+Practices+for+Optimal+Performance" width="80%" alt="Performance Tips"> </div>
+
+```csharp
+// ✅ Best Practices
+
+// ✅ Always enable double buffering for smoothness
 this.DoubleBuffered = true;
-this.MinimumSize = new Size(800, 600);
-this.StartPosition = FormStartPosition.CenterScreen;
-⚡ Performance Tips
-✅ Best Practices
-csharp
-Kodu kopyala
-// ✅ Enable double buffering
-this.DoubleBuffered = true;
 
-// ✅ Check OS before applying effects
+// ✅ Check OS compatibility before applying effects
 if (Windows11Effects.IsWindows11OrGreater())
 {
-    effects.EnableMicaEffect();
+    effects.EnableMicaEffect(); // Safe to apply
 }
 
-// ✅ Use modern fonts
+// ✅ Use modern Windows fonts
 this.Font = new Font("Segoe UI", 9);
-❌ Common Mistakes
-csharp
-Kodu kopyala
-// ❌ Don't forget OS check
-effects.EnableMicaEffect(); // Crashes on Windows 10
 
-// ❌ Avoid solid colors
-this.BackColor = Color.Black; // Overrides effects
+// ✅ Set proper form border style
+this.FormBorderStyle = FormBorderStyle.Sizable;
+```
 
-// ❌ Wrong border style
-this.FormBorderStyle = FormBorderStyle.FixedDialog; // Limits effects
-🐛 Troubleshooting
-Problem	Solution	Example
-Effects not showing	Check Windows version	Windows11Effects.IsWindows11OrGreater()
-Performance issues	Enable double buffering	this.DoubleBuffered = true;
-Compilation errors	Add DLL import	using System.Runtime.InteropServices;
+```csharp
+// ❌ Common Mistakes
 
-🧩 Debug Mode
-csharp
-Kodu kopyala
+// ❌ Never apply effects without checking OS first
+effects.EnableMicaEffect(); // ❌ Crashes on Windows 10!
+
+// ❌ Avoid solid colors that override effects
+this.BackColor = Color.Black; // ❌ Overrides Mica/Acrylic
+
+// ❌ Wrong border style limits effects
+this.FormBorderStyle = FormBorderStyle.FixedDialog; // ❌ No effects!
+
+// ❌ Don't forget to enable double buffering
+// Missing: this.DoubleBuffered = true; // ❌ Causes flickering
+```
+
+### 🐛 Troubleshooting
+<div align="center"> <h3>🔧 Fix Common Issues</h3> <img src="https://via.placeholder.com/700x200/D83B01/FFFFFF?text=Quick+Solutions+for+Common+Problems" width="80%" alt="Troubleshooting"> </div>
+
+### 🔧 Common Issues & Solutions
+
+| Problem | Solution | Code Example |
+|---------|----------|--------------|
+| **Effects not showing** | Check Windows version first | `Windows11Effects.IsWindows11OrGreater()` |
+| **Performance issues** | Enable double buffering | `this.DoubleBuffered = true` |
+| **Compilation errors** | Add required DLL import | `using System.Runtime.InteropServices` |
+| **Effects look wrong** | Set proper border style | `FormBorderStyle.Sizable` |
+
+```csharp
+// 🐞 Debug Mode
 public void EnableEffectsWithLogging()
 {
     try
@@ -243,23 +306,29 @@ public void EnableEffectsWithLogging()
         if (Windows11Effects.IsWindows11OrGreater())
         {
             effects.EnableMicaEffect();
-            Console.WriteLine("✅ Mica effect applied");
+            Console.WriteLine("✅ Mica effect applied successfully!");
+            statusLabel.Text = "🎨 Mica Effect Active";
         }
         else
         {
-            Console.WriteLine("⚠️ Windows 11 required for Mica");
+            Console.WriteLine("⚠️ Windows 11 required for Mica effect");
+            statusLabel.Text = "⚠️ Upgrade to Windows 11 for effects";
         }
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"❌ Error: {ex.Message}");
+        Console.WriteLine($"❌ Error applying effects: {ex.Message}");
+        statusLabel.Text = "❌ Error applying effects";
     }
 }
+```
 
 <div align="center">
-⭐ Don’t forget to star this repo if you found it helpful!
-Made with ❤️ for the WinForms community.
+⭐ Love This Project?
+If this library made your WinForms app look amazing, give it a star! ⭐
 
-Happy Coding! 🎉
+<img src="https://via.placeholder.com/400x100/FFB900/000000?text=⭐+Star+This+Repository+⭐" width="50%" alt="Star Repository">
+Made with ❤️ for the WinForms community
+<img src="https://via.placeholder.com/300x80/0078D4/FFFFFF?text=Happy+Coding+!+🎉" width="40%" alt="Happy Coding"></div> ```
+İşte tüm README.md içeriği kod blokları şeklinde! Her bölüm ayrı ayrı kod blokları içinde ve direkt kopyala-yapıştır yapabilirsin. 🚀
 
-</div> ```
