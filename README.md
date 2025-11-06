@@ -9,7 +9,6 @@
 
 **Transform your legacy WinForms apps into modern Windows 11 masterpieces! ✨**
 
-<img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Window/SVG/ic_fluent_window_24_regular.svg" width="120" alt="Windows 11 Icon">
 
 </div>
 
@@ -321,7 +320,7 @@ public void EnableEffectsWithLogging()
 ⭐ Love This Project?
 If this library made your WinForms app look amazing, give it a star! ⭐
 
-<img src="https://placehold.co/400x100/FFB900/000000/png?text=⭐+Star+This+Repository+⭐" width="50%" alt="Star Repository">
+<img src="https://img.shields.io/badge/⭐-Star_This_Repository-24292e?style=for-the-badge&logo=github" alt="Star Repository">
 Made with ❤️ for the WinForms community
-<img src="https://placehold.co/300x80/0078D4/FFFFFF/png?text=Happy+Coding+!+🎉" width="40%" alt="Happy Coding"> ```
+<img src="https://img.shields.io/badge/Happy_Coding_!-🎉-2d7d9a?style=for-the-badge" alt="Happy Coding"> ```
 
