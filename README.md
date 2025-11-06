@@ -50,7 +50,7 @@ new Windows11Effects(this).ApplyFullWindows11Theme();
 ## 📦 Installation
 <div align="center"> <h3>🎯 Choose Your Installation Method</h3> <img src="https://via.placeholder.com/700x200/2D2D30/FFFFFF?text=3+Easy+Ways+to+Get+Started" width="80%" alt="Installation Methods"> </div>
 
->> 🔧 Method 1: Manual Installation
+> 🔧 Method 1: Manual Installation
 ```csharp
 # 1. Create a new file in your project
 Windows11Effects.cs
@@ -60,7 +60,7 @@ Windows11Effects.cs
 # 3. Add using statement
 using Windows11Effects;
 ```
->> 📦 Method 2: NuGet Package
+> 📦 Method 2: NuGet Package
 
 ```csharp
 # Package Manager Console
@@ -73,7 +73,7 @@ dotnet add package Win11Effects.Fluent
 <PackageReference Include="Win11Effects.Fluent" Version="1.0.0" />
 
 ```
->> 🐙 Method 3: Clone Repository
+> 🐙 Method 3: Clone Repository
 ```csharp
 git clone https://github.com/yourrepo/winforms-win11-effects.git
 cp Windows11Effects.cs YourProject/
