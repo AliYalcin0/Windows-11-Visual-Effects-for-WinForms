@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Win11Effects.Fluent;
 
 namespace Windows11Effects.Examples
 {
