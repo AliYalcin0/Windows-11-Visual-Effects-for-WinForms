@@ -22,4 +22,4 @@ namespace Windows11Effects.Demo
             }
         }
     }
-}
+)
